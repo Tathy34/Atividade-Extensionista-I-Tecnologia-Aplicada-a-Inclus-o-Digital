@@ -1,0 +1,135 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Menu fixo */
+nav {
+    background-color: #2e7d32;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Cabeçalho com capa */
+header {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    background: url('img/capa.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+/* Conteúdo */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagens específicas */
+.img-horta1 {
+    background: url('img/horta1.jpg') no-repeat center center/cover;
+}
+
+.img-horta2 {
+    background: url('img/horta2.jpg') no-repeat center center/cover;
+}
+
+.img-horta3 {
+    background: url('img/horta3.jpg') no-repeat center center/cover;
+}
+
+.img-horta4 {
+    background: url('img/horta4.jpg') no-repeat center center/cover;
+}
+
+.img-abelhas {
+    background: url('img/abelhas.jpg') no-repeat center center/cover;
+}
+
+.img-compostagem {
+    background: url('img/compostagem.jpg') no-repeat center center/cover;
+}
+
+/* Estilo padrão para imagens dentro do conteúdo */
+main img {
+    max-width: 80%; /* Reduz um pouco do tamanho total */
+    height: auto;   /* Mantém a proporção */
+    display: block; /* Faz a imagem ocupar linha inteira */
+    margin: 20px auto; /* Centraliza e dá espaçamento */
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    box-shadow: 0 0 6px rgba(0,0,0,0.15); /* Sombra suave */
+}
+
+/* Grade de imagens da horta */
+.horta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
+    grid-gap: 15px; /* Espaço entre as imagens */
+    margin: 20px auto; /* Centraliza a grade no main */
+    max-width: 800px; /* Limita a largura total da grade */
+}
+
+.horta-grid div {
+    width: 100%;
+    padding-top: 80%; /* Mantém proporção retangular */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+
+/* Aplicando imagens específicas */
+.horta1 { background-image: url('img/horta1.jpg'); }
+.horta2 { background-image: url('img/horta2.jpg'); }
+.horta3 { background-image: url('img/horta3.jpg'); }
+.horta4 { background-image: url('img/horta4.jpg'); }
+.horta5 { background-image: url('img/horta5.jpg'); }
+.horta6 { background-image: url('img/horta6.jpg'); }
+.horta7 { background-image: url('img/horta7.jpg'); }
+.horta8 { background-image: url('img/horta8.jpg'); }
